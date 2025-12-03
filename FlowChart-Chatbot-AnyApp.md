@@ -51,3 +51,5 @@ Este repositorio sirve como ejemplo práctico para quienes buscan aprender a cre
 - Devolver respuestas estructuradas.
 - Integrarse con servicios externos como Google Calendar.
 - Mantener una arquitectura modular.
+
+![Multiple Apps](https://github.com/Mjmarquz-debug/n8n-FlowChart-Chats/blob/main/FlowChart-WhatsApp.png)
