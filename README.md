@@ -6,9 +6,9 @@
 
 **Flujo 1: Webhook y Agente de IA con Google Gemini**
 
-Recepción de mensajes mediante un Webhook (POST) en n8n.
-Procesamiento con IA para responder preguntas específicas del usuario.
-Envío de respuestas con opción de integración con Google Calendar.
+- Recepción de mensajes mediante un Webhook (POST) en n8n.
+- Procesamiento con IA para responder preguntas específicas del usuario.
+- Envío de respuestas con opción de integración con Google Calendar.
 
 **Flujo 2: Webhook y Twilio con Agente de IA**
 
