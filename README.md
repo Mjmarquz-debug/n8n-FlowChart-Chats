@@ -1,2 +1,61 @@
-# n8n-FlowChart-Chats
-Este repositorio contiene flujos de trabajo en n8n para la gestión de chats automatizados, incluyendo integraciones con IA, Google Calendar para la programación de citas, y un chatbot para agendar citas mediante WhatsApp y Twilio
+📌 Chat Flows Chart – n8n Webhook Chat Flow
+
+Este proyecto muestra un flujo completo creado en n8n para:
+
+Recibir mensajes a través de un Webhook.
+
+Procesarlos con un agente de IA (Google Gemini).
+
+Clasificar país y ciudad.
+
+Validar la información.
+
+Responder con un JSON estructurado.
+
+Opcionalmente, agendar automáticamente una cita en Google Calendar.
+
+Este repositorio sirve como ejemplo práctico para quienes buscan aprender a crear flujos inteligentes, estructurados y escalables en n8n.
+
+🚀 Resumen del Flujo Principal
+
+Recepción de Datos via Webhook: El flujo inicia con un Webhook (POST) que recibe datos de un formulario simulado.
+
+Validación del Mensaje (IF): Se verifica que el mensaje no esté vacío. Si está vacío, se devuelve un error en JSON. Si no, continúa el flujo.
+
+Conexión con el Flujo de IA: Se llama a un flujo secundario que utiliza el agente de IA para procesar el mensaje y extraer país y ciudad.
+
+Mapeo Final de País y Ciudad: Se realiza otro mapeo para asegurar que la respuesta final esté bien estructurada.
+
+Respuesta Final (Respond to Webhook): Se devuelve un JSON confirmando la recepción y procesamiento correcto.
+
+Integración con Google Calendar (Opcional): El flujo puede crear un evento en Google Calendar automáticamente.
+
+🔧 Tecnologías Utilizadas
+
+n8n
+
+Webhook Trigger
+
+Google Gemini (Chat Model)
+
+IA Agent + Memory + Structured Output Parser
+
+Google Calendar
+
+JSON Manual Mapping
+
+Conditional logic (IF)
+
+📅 Objetivo del Proyecto
+
+Demostrar cómo construir un flujo profesional en n8n que sea capaz de:
+
+Recibir y validar datos externos.
+
+Procesar información con IA.
+
+Devolver respuestas estructuradas.
+
+Integrarse con servicios externos como Google Calendar.
+
+Mantener una arquitectura modular.
